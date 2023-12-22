@@ -1,0 +1,243 @@
+.logo {
+    width: 150px;
+    height: 80px;
+}
+
+/*header {
+    outline-color: aqua;
+    outline-style: dashed;
+}
+
+section {
+    outline-color: rgb(180, 180, 180);
+    outline-style: dashed;
+}*/
+
+footer {
+    border-radius: 20px;
+    background-color: black;
+    outline-color: rgb(255, 255, 255);
+    outline-style:groove;
+    padding: 30px;
+}
+
+
+@font-face {
+    font-family: 'Title';
+    src: url(Fonts/Unbounded-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'DownTitle';
+    src: url(Fonts/YanoneKaffeesatz-Light.ttf);
+}
+
+@font-face {
+    font-family: 'MenuTitle';
+    src: url(Fonts/Unbounded-Light.ttf);
+}
+
+
+.Title {
+    font-family: Title;
+    font-size: larger;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.MenuTitle {
+    font-family: MenuTitle;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.TitleN {
+    font-family: Title;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.cart {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.element {
+    font-family: MenuTitle;
+    color: #ffffff;
+    font-style: italic;
+    background-color: rgba(250, 235, 215, 0.082);
+    position: relative;
+    overflow: visible;
+    border-radius: 10px;
+    flex: 1 0 200px;
+    margin: 10px;
+}
+
+.element2 {
+    font-family: MenuTitle;
+    color: #ffffff;
+    font-style: italic;
+    background-color: rgba(250, 235, 215, 0.082);
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    flex: 1 0 200px;
+    margin: 10px;
+    background-position: center;
+}
+
+.element2:hover .title {
+    transform: translateY(-30%);
+    background-color: rgba(14, 14, 14, 0.432);
+    opacity: 100%;
+}
+
+.element2 .title {
+    opacity: 0%;
+}
+
+.imgpr {
+    margin-top: -80px;
+    width: 600px;
+}
+
+.what {
+    border-radius: 20px;
+    outline-style: groove;
+    outline-width: 3px;
+    outline-color: #ffffff49;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.title {
+    transition: transform 0.3s ease-out;
+}
+
+.active-section {
+    background-color: #34d0db81;
+    color: #f1e3e3;
+    border-radius: 20px;
+}
+
+.agr {
+    font-family: MenuTitle;
+    color: #ffffff;
+    font-style: italic;
+    text-align: center;
+}
+
+.element:hover .title {
+    transform: translateY(-100%);
+    opacity: 10%;
+}
+
+.description {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+}
+
+.element:hover .description {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.DownTitle {
+    font-family: DownTitle;
+    font-size: larger;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.DT2 {
+    margin-left: 200px;
+}
+
+video {
+    position: absolute;
+    margin-left: 269px;
+    margin-top: -100px;
+    width: 600px;
+    height: 600px;
+    opacity: 40%;
+    z-index: -1;
+}
+
+/*
+.Block {
+    position:absolute;
+    margin-left: 269px;
+    margin-top: -100px;
+    opacity: 30%;
+}
+*/
+
+.Info {
+    margin-top: 120px;
+    margin-right: 300px;
+}
+
+body {
+    background-image: url("Resources/bck.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5;
+}
+
+#Site {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#Menu {
+    margin-top: -59px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .Title {
+        font-size: 24px;
+    }
+
+    .MenuTitle {
+        font-size: 16px;
+    }
+
+    .TitleN {
+        font-size: 16px;
+    }
+
+    .element,
+    .element2 {
+        flex: 1 0 100%;
+    }
+
+    .imgpr {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .DT2 {
+        margin-left: 0;
+    }
+
+    video {
+        margin-left: 0;
+    }
+
+    .Info {
+        margin: 0;
+    }
+
+    #Site {
+        margin: 0;
+    }
+
+    #Menu {
+        margin-top: 0;
+        text-align: center;
+    }
+}

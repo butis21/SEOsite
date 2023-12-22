@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkos Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+    <div id="Site">
+        <header>
+            <img class="logo" src="Resources/LogoW.png" alt="Logo">
+            <div id="Menu">
+                <a class="MenuTitle" href="#start">Начало &nbsp;&nbsp;</a>
+                <a class="MenuTitle" href="#me">Обо мне &nbsp;&nbsp;</a>
+                <a class="MenuTitle" href="#works">Работы &nbsp;&nbsp;</a>
+                <a class="MenuTitle" href="#contacts">Контакты &nbsp;&nbsp;</a>
+            </div>
+        </header>
+        <Section id="start" class="Start">
+            <div class="Info">
+                <label class="Title">
+                    Сайт для продвижения или просто показать свои умения в разработке сайтов. Принимаю заказы ;)
+                </label>
+                <video loop autoplay muted src="Resources/output_no_bg2.webm"></video>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <label class="DownTitle">Сделаю сайт быстро, качественно, а самое главное - </label>
+            <section class="DT2">
+                <label class="DownTitle">с душой и без всяких AI.</label>
+            </section>
+        </Section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <hr>
+        <br>
+        <Section id="me" class="Me">
+            <label class="what">Обо мне</label>
+            <br>
+            <br>
+            <div class="Introduce">
+                <Label class="TitleN">Привет! Меня зовут Роман Бутырин, я обладаю некоторыми умениями:</Label>
+            </div>
+            <br>
+            <div class="cart">
+                <div class="element">
+                    <h2 class="title">FIGMA</h2>
+                    <p class="description">Разработка макетов сайта и его дизайна в приложении Figma.</p>
+                </div>
+                <div class="element">
+                    <h2 class="title">TILDA</h2>
+                    <p class="description">Разработка лендинга или многостраничного сайта на базе Tilda.</p>
+                </div>
+                <div class="element">
+                    <h2 class="title">GIT</h2>
+                    <p class="description">Работа с Git, точнее GitHub, GitHub Pages.</p>
+                </div>
+                <div class="element">
+                    <h2 class="title">C#</h2>
+                    <p class="description">Разработка "форм" и ботов на базе языка программирования C#.</p>
+                </div>
+                <div class="element">
+                    <h2 class="title">PYTHON</h2>
+                    <p class="description">Разработка ботов на базе языка программирования Python.</p>
+                </div>
+                <div class="element">
+                    <h2 class="title">JAVASCRIPT</h2>
+                    <p class="description">Валидация на базе JavaScript.</p>
+                </div>
+                <div class="element">
+                    <h2 class="title">PHOTOSHOP</h2>
+                    <p class="description">Создание макетов, разработка дизайна в Photoshop.</p>
+                </div>
+                <div class="element">
+                    <h2 class="title">HTML</h2>
+                    <p class="description">Работа с простыми (и не только ) страницами на языке разметки HTML.</p>
+                </div>
+            </div>
+        </Section>
+        <br><br><br><br><br><br><br><br>
+        <hr>
+        <br>
+        <Section id="works" class="Works">
+            <label class="what">Работы</label>
+            <br>
+            <br>
+            <div class="Introduce">
+                <Label class="TitleN">Вот примеры моих работ для ознакомления:</Label>
+            </div>
+            <br>
+            <div class="cart">
+                <div class="element2">
+                    <h2 class="title">Кинотеатр</h2>
+                    <img src="/Resources/pr/1.png" class="imgpr">
+                </div>
+                <div class="element2">
+                    <h2 class="title">Гироскутер</h2>
+                    <img src="/Resources/pr/2.png" class="imgpr">
+                </div>
+                <div class="element2">
+                    <h2 class="title">Проверка логина</h2>
+                    <img src="/Resources/pr/3.png" class="imgpr">
+                </div>
+                <div class="element2">
+                    <h2 class="title">Sublime Text</h2>
+                    <img src="/Resources/pr/4.png" class="imgpr">
+                </div>
+                <div class="element2">
+                    <h2 class="title">Крутой сайт</h2>
+                    <img style="width: 100%;" src="/Resources/pr/5.png" class="imgpr">
+                </div>
+            </div>
+        </Section>
+        <footer id="contacts" class="Contacts">
+            <div class="agr">
+                <a href="https://vk.com/rbutyrin" target="_blank">Мой профиль в VK</a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuItems = document.querySelectorAll('#Menu a');
+    
+            menuItems.forEach(item => {
+                item.addEventListener('click', function (event) {
+                    event.preventDefault();
+    
+                    const sectionId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(sectionId);
+    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

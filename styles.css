@@ -181,6 +181,7 @@ video {
 }
 
 body {
+    background-color: #000000;
     background-image: url("Resources/bck.png");
     background-repeat: no-repeat;
     background-size: cover;

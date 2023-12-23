@@ -3,6 +3,16 @@
     height: 80px;
 }
 
+/*header {
+    outline-color: aqua;
+    outline-style: dashed;
+}
+
+section {
+    outline-color: rgb(180, 180, 180);
+    outline-style: dashed;
+}*/
+
 footer {
     border-radius: 20px;
     background-color: black;
@@ -155,6 +165,10 @@ video {
     z-index: -1;
 }
 
+.video {
+    opacity: 0%;
+}
+
 /*
 .Block {
     position:absolute;
@@ -188,6 +202,11 @@ body {
 
 
 @media only screen and (max-width: 600px) {
+    .logo {
+
+        text-align: center;
+    }
+
     .Title {
         font-size: 24px;
     }
@@ -215,13 +234,19 @@ body {
     }
 
     video {
+        opacity: 0%;
+    }
+
+    .video {
         position: absolute;
-        margin-left: -400px;
-        margin-top: 200px;
+        margin-left: -350px;
+        margin-top: 190px;
         width: 600px;
         height: 600px;
         opacity: 40%;
         z-index: -1;
+        outline: #f1e3e3;
+        filter: blur(5px);
     }
 
     .Info {
